@@ -6,9 +6,9 @@ const headers: IncomingHttpHeaders = {
   authorization: "ApiKey dksalfjklasjf",
 };
 
-const headersWithExtraSpaces: IncomingHttpHeaders = {
-  authorization: "ApiKey    dksalfjklasjf",
-};
+//const headersWithExtraSpaces: IncomingHttpHeaders = {
+  //authorization: "ApiKey    dksalfjklasjf",
+//};
 
 const headersWithoutApiKey: IncomingHttpHeaders = {
   authorization: "NotAnApiKey dksalfjklasjf",
