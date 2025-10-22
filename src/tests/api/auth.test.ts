@@ -29,7 +29,7 @@ describe("auth", () => {
   });
 
   test("Headers do not contain an ApiKey", () => {
-    expect(getAPIKey(headersWithoutApiKey)).toBe("dksalfjklasjf");
+    expect(getAPIKey(headersWithoutApiKey)).toBe(null);
   });
 
   test("Headers with missing ApiKey value or tag", () => {
