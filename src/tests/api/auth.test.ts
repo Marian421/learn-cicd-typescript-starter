@@ -6,10 +6,6 @@ const headers: IncomingHttpHeaders = {
   authorization: "ApiKey dksalfjklasjf",
 };
 
-//const headersWithExtraSpaces: IncomingHttpHeaders = {
-  //authorization: "ApiKey    dksalfjklasjf",
-//};
-
 const headersWithoutApiKey: IncomingHttpHeaders = {
   authorization: "NotAnApiKey dksalfjklasjf",
 };
@@ -39,8 +35,4 @@ describe("auth", () => {
   test("Headers miss the authorization tag", () => {
     expect(getAPIKey(headersWithoutAuthorization)).toBe(null);
   });
-
-  //test("Returns the ApiKey if there are extra spaces between values", () => {
-  // expect(getAPIKey(headersWithExtraSpaces)).toBe("dksalfjklasjf");
-  //});
 });
