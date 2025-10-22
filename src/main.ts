@@ -29,11 +29,6 @@ app.use(
   }),
 );
 
-function unused() {
-  // this function does nothing
-  // and is called nowhere
-}
-
 app.use("/", express.static(path.join(__dirname, config.api.filepathRoot)));
 
 const v1Router = express.Router();
